@@ -1,0 +1,7 @@
+body{
+    /* Gratis bakgrundsbild från pexels.com */
+    background-image: url(https://images.pexels.com/photos/532563/pexels-photo-532563.jpeg);
+    background-repeat: no-repeat;
+    background-size: contain
+    font-family: Verdana, Helvetica, Arial, sans-serif;  
+}
