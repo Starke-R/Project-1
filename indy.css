@@ -60,7 +60,7 @@ footer{
     display: flex;
     background-color: #C8102E;
     font-weight: bold;
-    height: 50px;
+    height: 60px;
     width: 1300px;
     border-style: outset;
     border-color: #00B2A9;
@@ -103,4 +103,22 @@ a:hover{
       
 a{ 
     text-decoration: none; 
+    }
+
+#fblogo:hover{
+    content: url("facebookcolor.webp");
+    transform: scale(1.2);
+    }
+
+#instalogo:hover{
+    content: url("instagramcolor.webp");
+    transform: scale(1.2);
+    }
+ #twitterlogo:hover{
+    content: url("twittercolor.webp");
+    transform: scale(1.2);
+    } 
+#ytlogo:hover{
+    content: url("youtubecolor.webp");
+    transform: scale(1.2);
     }
