@@ -5,3 +5,43 @@ body{
     background-size: contain
     font-family: Verdana, Helvetica, Arial, sans-serif;  
 }
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    font-weight: bold;
+    width: 1300px;
+    height: auto;
+    margin-top: 15px;
+    border-style: outset;
+    border-color: #00B2A9;
+    padding-top: 25px;
+    }
+
+.article{
+    display: flex;
+    font-weight: bold;
+    border-width: 10px;
+    justify-content: center;
+    border-left: #C8102E solid 5px;
+    height: 420px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    }
+
+footer{
+    display: flex;
+    background-color: #C8102E;
+    font-weight: bold;
+    height: 50px;
+    width: 1300px;
+    border-style: outset;
+    border-color: #00B2A9;
+    margin-top: 10px;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    }
