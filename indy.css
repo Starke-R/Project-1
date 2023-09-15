@@ -3,8 +3,32 @@ body{
     background-image: url(https://images.pexels.com/photos/532563/pexels-photo-532563.jpeg);
     background-repeat: no-repeat;
     background-size: contain
-    font-family: Verdana, Helvetica, Arial, sans-serif;  
+    font-family Verdana, Helvetica, Arial, sans-serif;  
 }
+
+header{
+    background-color: #C8102E;
+    font-weight: bold;
+    height: 125px;
+    width: 1300px;
+    margin-top: 15px;
+    border-style: outset;
+    border-color: #00B2A9;
+    }
+
+nav{
+    display: flex;
+    background-color: #C8102E;
+    font-weight: bold;
+    height: 50px;
+    width: 1300px;
+    margin-top: 15px;
+    border-style: outset;
+    border-color: #00B2A9;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center; 
+    }
 
 main{
     display: flex;
@@ -40,8 +64,43 @@ footer{
     width: 1300px;
     border-style: outset;
     border-color: #00B2A9;
-    margin-top: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
+    }
+
+h1{
+    color: white;
+    font-family: albertus;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 0;
+    }
+    
+#slogan{
+    margin-top: 5px;
+    color: #F6EB61;
+    font-family: albertus;  
+    text-align: center;
+    font-size: medium;
+    }
+
+.sideNav{
+    color: #F6EB61;
+    font-size: 20px;
+    }
+
+.sideNav:hover{
+    transform: scale(1.2);
+    }
+    
+a:hover{
+    color: #00B2A9;
+    }
+      
+a{ 
+    text-decoration: none; 
     }
