@@ -5,37 +5,38 @@ body{
     font-family: Verdana, Helvetica, Arial, sans-serif;  
 }
 
+/* Container med grid, main och sidebar inuti */
+.container{
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-areas:
+    "top sidebar"
+    "nav sidebar"
+    "mainArticle sidebar";
+    grid-template-columns: 1300px 1fr;
+    margin-left: 125px;
+    }
+
 header{
+    grid-area: top;
     background-color: #C8102E;
     font-weight: bold;
     height: 125px;
     width: 1300px;
-    margin-top: 15px;
+    margin-top: 25px;
     border-style: outset;
     border-color: #00B2A9;
     }
-
+    
 nav{
-    display: flex;
+    grid-area: nav;
     background-color: #C8102E;
     font-weight: bold;
     height: 50px;
     width: 1300px;
-    margin-top: 15px;
+    margin-top: 25px;
     border-style: outset;
-    border-color: #00B2A9;
-    justify-content: center;
-    justify-content: space-evenly;
-    align-items: center; 
-    }
-
-.container{
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-areas:
-    "mainArticle sidebar";
-    grid-template-columns: 1300px 1fr;
-    gap: 20px;
+    border-color: #00B2A9; 
     }
 
 main{
@@ -45,7 +46,8 @@ main{
     background-color: white;
     font-weight: bold;
     height: auto;
-    margin-top: 15px;
+    width: 1300px;
+    margin-top: 25px;
     border-style: outset;
     border-color: #00B2A9;
     padding-top: 25px;
@@ -67,10 +69,17 @@ main{
 sidebar{
     grid-area: sidebar;
     background-color: #C8102E;
+    margin-top: 25px; 
+    height: 700px;
     width: 300px;     
     text-align: center; 
     border-style: outset;
     border-color: #00B2A9;
+    margin-left: 50px;
+    padding-top: 25px;
+    position: fixed;
+    right: 100px;
+    overflow-x: hidden;
     }
 
 footer{
@@ -81,8 +90,9 @@ footer{
     width: 1300px;
     border-style: outset;
     border-color: #00B2A9;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 125px;
     justify-content: center;
     justify-content: space-evenly;
     align-items: center;
