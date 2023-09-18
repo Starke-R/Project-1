@@ -2,8 +2,7 @@ body{
     /* Gratis bakgrundsbild från pexels.com */
     background-image: url(https://images.pexels.com/photos/532563/pexels-photo-532563.jpeg);
     background-repeat: no-repeat;
-    background-size: contain
-    font-family Verdana, Helvetica, Arial, sans-serif;  
+    font-family: Verdana, Helvetica, Arial, sans-serif;  
 }
 
 header{
@@ -30,12 +29,21 @@ nav{
     align-items: center; 
     }
 
+.container{
+    display: grid;
+    grid-template-rows: 1;
+    grid-template-areas:
+    "mainArticle sidebar";
+    grid-template-columns: 1300px 1fr;
+    gap: 20px;
+    }
+
 main{
+    grid-area: mainArticle;
     display: flex;
     flex-direction: column;
     background-color: white;
     font-weight: bold;
-    width: 1300px;
     height: auto;
     margin-top: 15px;
     border-style: outset;
@@ -54,6 +62,15 @@ main{
     margin-right: 150px;
     margin-top: 15px;
     margin-bottom: 25px;
+    }
+
+sidebar{
+    grid-area: sidebar;
+    background-color: #C8102E;
+    width: 300px;     
+    text-align: center; 
+    border-style: outset;
+    border-color: #00B2A9;
     }
 
 footer{
