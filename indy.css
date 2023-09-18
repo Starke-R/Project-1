@@ -163,3 +163,41 @@ a{
     content: url("youtubecolor.webp");
     transform: scale(1.2);
     }
+
+#football{
+    margin-top: 25px;
+}
+
+#football:hover{
+    animation-name: spin;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+
+#football:active{
+    animation-name: roll;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes roll {
+    0% {
+        
+        
+    }
+    100% {
+        
+        margin-bottom: 0%;
+    }
+}
