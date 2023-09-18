@@ -30,6 +30,7 @@ header{
     
 nav{
     grid-area: nav;
+    display: flex;
     background-color: #C8102E;
     font-weight: bold;
     height: 50px;
@@ -37,6 +38,9 @@ nav{
     margin-top: 25px;
     border-style: outset;
     border-color: #00B2A9; 
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
     }
 
 main{
@@ -115,15 +119,23 @@ h1{
     font-size: medium;
     }
 
+#topNews{
+    margin-top: 25px;
+    color: #F6EB61;
+    font-family: albertus;  
+    text-align: center;
+    font-size: x-large;
+        }    
+
 .sideNav{
     color: #F6EB61;
     font-size: 20px;
     }
-
+    
 .sideNav:hover{
     transform: scale(1.2);
     }
-    
+
 a:hover{
     color: #00B2A9;
     }
@@ -141,10 +153,12 @@ a{
     content: url("instagramcolor.webp");
     transform: scale(1.2);
     }
+
  #twitterlogo:hover{
     content: url("twittercolor.webp");
     transform: scale(1.2);
     } 
+
 #ytlogo:hover{
     content: url("youtubecolor.webp");
     transform: scale(1.2);
