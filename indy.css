@@ -180,3 +180,141 @@ a{
     }
 }
 
+@media only screen and (max-width: 576px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5px;
+        }
+
+    header{
+        background-color: #C8102E;
+        font-weight: bold;
+        height: 100px;
+        width: auto;
+        margin-top: 10px;
+        border-style: outset;
+        border-color: #00B2A9;
+        }
+
+        h1{
+            color: white;
+            font-family: albertus;
+            font-size: 30px;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 0;
+            }
+            
+        #slogan{
+            margin-top: 5px;
+            color: #F6EB61;
+            font-family: albertus;  
+            text-align: center;
+            font-size: medium;
+            }
+            
+    nav{
+        background-color: #C8102E;
+        font-weight: bold;
+        width: auto;
+        border-style: outset;
+        border-color: #00B2A9;
+        margin-top: 10px;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+
+        .sideNav{
+            color: #F6EB61;
+            font-size: 15px;
+            }
+
+    sidebar{
+        background-color: #C8102E;
+        margin-top: 10px; 
+        height: 170px;
+        width: auto;     
+        text-align: center; 
+        border-style: outset;
+        border-color: #00B2A9;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding-top: 1px;
+        position: relative;
+        right: 0px;
+        }
+
+        #lfclogo{
+            display: none;
+        }
+
+        #topNews{
+            margin-top: 15px;
+            color: #F6EB61;
+            font-family: albertus;  
+            text-align: center;
+            font-size: 20px;
+            }  
+
+    main{
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        font-weight: bold;
+        height: auto;
+        width: auto;
+        margin-top: 10px;
+        border-style: outset;
+        border-color: #00B2A9;
+        padding-top: 25px;
+        }
+    
+    .article{
+        display: flex;
+        font-weight: bold;
+        border-width: 10px;
+        border-left: #C8102E solid 5px;
+        height: auto;
+        width: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 5px;
+        margin-bottom: 25px;
+        }
+
+        #pllogo{
+            height: auto;
+            width: 350px;
+        }
+
+        #cllogo{
+            height: auto;
+            width: 350px;
+        }
+        h3{
+            font-size: 20px;
+            }
+        h4{
+            font-size: 15px;
+            }
+
+    footer{
+        display: flex;
+        background-color: #C8102E;
+        font-weight: bold;
+        height: 60px;
+        width: auto;
+        border-style: outset;
+        border-color: #00B2A9;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        }
+}
