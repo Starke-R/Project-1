@@ -20,52 +20,54 @@ body{
     }
 
 header{
-    grid-area: top;
     background-color: #C8102E;
-    font-weight: bold;
-    height: 125px;
-    width: auto;
-    margin-top: 25px;
     border-style: outset;
     border-color: #00B2A9;
+    grid-area: top;
+    height: 125px;
+    margin-top: 25px;
+    width: auto;
+    }
+
+#second-lfclogo{
+    display: none;
     }
     
 nav{
-    grid-area: nav;
-    display: flex;
-    background-color: #C8102E;
-    font-weight: bold;
-    height: 50px;
-    width: auto;
-    margin-top: 25px;
+    align-items: center;
     border-style: outset;
-    border-color: #00B2A9; 
+    border-color: #00B2A9;
+    background-color: #C8102E;
+    display: flex;
+    grid-area: nav;   
+    height: 50px;
     justify-content: center;
     justify-content: space-evenly;
-    align-items: center;
+    margin-top: 25px;
+    width: auto;
     }
 
 main{
-    grid-area: mainArticle;
-    display: flex;
-    flex-direction: column;
     background-color: white;
-    font-weight: bold;
-    height: auto;
-    width: auto;
-    margin-top: 25px;
     border-style: outset;
     border-color: #00B2A9;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    grid-area: mainArticle;
+    height: auto;
+    margin-top: 25px;    
     padding-top: 25px;
+    width: auto;
     }
 
 .article{
+    border-left: #C8102E solid 5px;
+    border-width: 10px;
     display: flex;
     font-weight: bold;
-    border-width: 10px;
-    justify-content: center;
-    border-left: #C8102E solid 5px;
     height: auto;
+    justify-content: center;
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 15px;
@@ -73,60 +75,60 @@ main{
     }
 
 sidebar{
-    grid-area: sidebar;
     background-color: #C8102E;
-    margin-top: 25px; 
-    height: 700px;
-    width: 300px;     
-    text-align: center; 
     border-style: outset;
     border-color: #00B2A9;
+    grid-area: sidebar;
+    height: 700px;  
+    margin-top: 25px;
     margin-left: 50px;
+    overflow: auto;
     padding-top: 25px;
     position: fixed;
     right: 100px;
-    overflow: auto;
+    text-align: center; 
+    width: 300px;
     }
 
 footer{
-    grid-area: footer;
-    display: flex;
+    align-items: center;
     background-color: #C8102E;
-    font-weight: bold;
-    height: 60px;
     border-style: outset;
     border-color: #00B2A9;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    display: flex;
+    font-weight: bold;
+    grid-area: footer;
+    height: 60px;
     justify-content: center;
     justify-content: space-evenly;
-    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
     }
 
 h1{
     color: white;
     font-family: albertus;
     font-size: 50px;
-    text-align: center;
     margin-top: 25px;
     margin-bottom: 0;
+    text-align: center;
     }
     
-#slogan{
-    margin-top: 5px;
+#slogan{    
     color: #F6EB61;
     font-family: albertus;  
-    text-align: center;
     font-size: medium;
+    margin-top: 5px;
+    text-align: center;
     }
 
 #topNews{
-    margin-top: 25px;
     color: #F6EB61;
     font-family: albertus;  
-    text-align: center;
     font-size: x-large;
-        }    
+    margin-top: 25px;
+    text-align: center;
+    }    
 
 .sideNav{
     color: #F6EB61;
@@ -182,198 +184,273 @@ a{
 }
 
 
-/* Responsive design när skärmen blir mindre än 1135px */
-@media only screen and (max-width: 1335px) {
+/* Responsive design när skärmen blir mindre än 980px */
+@media only screen and (max-width: 980px) {
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        margin-left: 5px;
-        margin-right: 5px;
-        }
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
 
-    h1{
-        color: white;
-        font-family: albertus;
-        font-size: 40px;
-        text-align: center;
-        margin-top: 25px;
-        margin-bottom: 0;
-        }
+header{
+    align-items: center;
+    background-color: #C8102E;
+    border-style: outset;
+    border-color: #00B2A9;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: 85% 1fr;
+    grid-template-rows: 1;
+    height: 120px;
+    margin-top: 10px;
+    width: auto;
+    }
+
+h1{
+    color: white;
+    font-family: albertus;
+    font-size: 50px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2; 
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-align: center;
+    }
     
-    sidebar{
-        grid-area: mainArticle;
-        background-color: #C8102E;
-        margin-top: 25px; 
-        height: auto;
-        width: auto;     
-        text-align: center; 
-        border-style: outset;
-        border-color: #00B2A9;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-top: 25px;
-        position: relative;
-        right: 0px;
-        }
+#slogan{
+    color: #F6EB61;
+    font-family: albertus;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-bottom: 50px;
+    text-align: center;
+    }
 
-        #lfclogo{
-            height: 150px;
-            width: 109px;
-        }
+#second-lfclogo{
+    display: unset;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 95px;
+    margin-left: 10px;
+    width: 69px;
+    }
 
-        #topNews{
-            margin-top: 15px;
-            color: #F6EB61;
-            font-family: albertus;  
-            text-align: center;
-            font-size: 20px;
-            }  
+sidebar{
+    background-color: #C8102E;
+    border-style: outset;
+    border-color: #00B2A9;
+    grid-area: mainArticle;
+    height: auto;
+    margin-top: 25px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    width: auto; 
+    }
 
-    .article{
-        margin-left: 10px;
-        margin-right: 10px;
-        }
+#first-lfclogo{
+    display: none;
+    }
+
+#topNews{
+    color: #F6EB61;
+    margin-top: 15px;
+    font-family: albertus;  
+    font-size: 20px;
+    text-align: center;
+    }  
+
+.article{
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+#football{
+    display: none;
+    }     
+
 }
 
 
-/* Responsive design när skärmen blir mindre än 576px */
-@media only screen and (max-width: 576px) {
+/* Responsive design när skärmen blir mindre än 480px */
+@media only screen and (max-width: 480px) {
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        margin-left: 5px;
-        margin-right: 5px;
-        }
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+    }
 
-    header{
-        background-color: #C8102E;
-        font-weight: bold;
-        height: 100px;
-        width: auto;
-        margin-top: 10px;
-        border-style: outset;
-        border-color: #00B2A9;
-        }
+header{
+    align-items: center;
+    background-color: #C8102E;
+    border-style: outset;
+    border-color: #00B2A9;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: 75% 1fr;
+    grid-template-rows: 1;    
+    height: 90px;    
+    margin-top: 10px;
+    width: auto;
+    }
 
-        h1{
-            color: white;
-            font-family: albertus;
-            font-size: 30px;
-            text-align: center;
-            margin-top: 25px;
-            margin-bottom: 0;
-            }
-            
-        #slogan{
-            margin-top: 5px;
-            color: #F6EB61;
-            font-family: albertus;  
-            text-align: center;
-            font-size: medium;
-            }
-            
-    nav{
-        background-color: #C8102E;
-        font-weight: bold;
-        width: auto;
-        border-style: outset;
-        border-color: #00B2A9;
-        margin-top: 10px;
-        justify-content: center;
-        justify-content: space-evenly;
-        align-items: center;
-        }
+h1{
+    color: white;
+    font-family: albertus;
+    font-size: 20px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;    
+    margin-top: 25px;
+    margin-bottom: 0;
+    text-align: center;
+    }
 
-        .sideNav{
-            color: #F6EB61;
-            font-size: 15px;
-            }
+#slogan{
+    color: #F6EB61;
+    font-family: albertus;  
+    font-size: 10px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+    }
 
-    sidebar{
-        background-color: #C8102E;
-        margin-top: 10px; 
-        height: 170px;
-        width: auto;     
-        text-align: center; 
-        border-style: outset;
-        border-color: #00B2A9;
-        margin-left: 10px;
-        margin-right: 10px;
-        padding-top: 1px;
-        position: relative;
-        right: 0px;
-        }
-
-        #lfclogo{
-            display: none;
-        }
-
-        #topNews{
-            margin-top: 15px;
-            color: #F6EB61;
-            font-family: albertus;  
-            text-align: center;
-            font-size: 20px;
-            }  
-
-    main{
-        display: flex;
-        flex-direction: column;
-        background-color: white;
-        font-weight: bold;
-        height: auto;
-        width: auto;
-        margin-top: 10px;
-        border-style: outset;
-        border-color: #00B2A9;
-        padding-top: 25px;
-        }
+#second-lfclogo{
+    display: unset;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 75px;
+    margin-left: 10px;
+    width: 59px;
+    }
     
-    .article{
-        display: flex;
-        font-weight: bold;
-        border-width: 10px;
-        border-left: #C8102E solid 5px;
-        height: auto;
-        width: auto;
-        margin-left: 10px;
-        margin-right: 10px;
-        margin-top: 5px;
-        margin-bottom: 25px;
-        }
+nav{
+    align-items: center;
+    background-color: #C8102E;
+    border-style: outset;
+    border-color: #00B2A9;
+    font-weight: bold;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    width: auto;
+    }
 
-        #pllogo{
-            height: auto;
-            width: 350px;
-        }
+.sideNav{
+    color: #F6EB61;
+    font-size: 15px;
+    }
 
-        #cllogo{
-            height: auto;
-            width: 350px;
-        }
-        h3{
-            font-size: 20px;
-            }
-        h4{
-            font-size: 15px;
-            }
+sidebar{
+    background-color: #C8102E;
+    border-style: outset;
+    border-color: #00B2A9;
+    height: 170px;
+    margin-top: 10px;
+    padding-top: 1px;
+    position: relative;
+    right: 0px;
+    text-align: center;
+    width: auto;
+    }
 
-    footer{
-        display: flex;
-        background-color: #C8102E;
-        font-weight: bold;
-        height: 60px;
-        width: auto;
-        border-style: outset;
-        border-color: #00B2A9;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-        justify-content: center;
-        justify-content: space-evenly;
-        align-items: center;
-        }
+#first-lfclogo{
+    display: none;
+    }
+
+#topNews{
+    color: #F6EB61;
+    font-family: albertus;  
+    font-size: 20px;
+    margin-top: 15px;
+    text-align: center;
+    }  
+
+main{
+    border-style: outset;
+    border-color: #00B2A9;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 25px;
+    width: auto;
+    }
+
+.article{
+    border-width: 10px;
+    border-left: #C8102E solid 5px;
+    display: flex;
+    font-weight: bold;
+    height: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    width: auto;
+    }
+
+#pllogo{
+    height: auto;
+    width: 300px;
+    }
+
+#cllogo{
+    height: auto;
+    width: 300px;
+    }
+
+#pele{
+    height: auto;
+    width: 300px;
+    }
+h3{
+    font-size: 20px;
+    }
+h4{
+    font-size: 15px;
+    }
+
+footer{
+    align-items: center;
+    display: flex;
+    background-color: #C8102E;
+    border-style: outset;
+    border-color: #00B2A9;
+    font-weight: bold;
+    height: 60px;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+    }
+
+#football{
+    display: none;
+    }     
+
 }
