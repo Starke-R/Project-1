@@ -251,8 +251,8 @@ sidebar{
     grid-area: mainArticle;
     height: auto;
     margin-top: 25px; 
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 0px;
+    margin-right: none;
     padding-top: 5px;
     position: relative;
     right: 0px;
