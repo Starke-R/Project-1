@@ -184,7 +184,7 @@ a{
 }
 
 
-/* Responsive design när skärmen blir mindre än 980px */
+/* Responsive när skärmen är mindre än 980px */
 @media only screen and (max-width: 980px) {
 
 .container{
@@ -284,7 +284,7 @@ sidebar{
 }
 
 
-/* Responsive design när skärmen blir mindre än 480px */
+/* Responsive design när skärmen är mindre än 480px */
 @media only screen and (max-width: 480px) {
 
 .container{
@@ -452,5 +452,13 @@ footer{
 #football{
     display: none;
     }     
+
+.sideNav:hover{
+    transform: none;
+    }
+
+a:hover{
+    color: none;
+    }
 
 }
